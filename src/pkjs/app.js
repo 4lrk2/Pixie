@@ -1,5 +1,4 @@
-var forecastIOKey = "56122e82038a99491f6678b47707bf78";
-
+var forecastIOKey = "68f9f01b8264c605e7d4abe917a623f6";
 
 // make it easy to convert an icon to a number for the pebble side
 var icons = [
@@ -18,17 +17,17 @@ var icons = [
 
 
 function getAndShowWeather ( ) {
-
+  navigator.geolocation.getCurrentPosition(function (position) {
     // position.coords.latitude, position.coords.longitude
-    getCurrentWeather(50.087015, 14.502838);
-  
+    getCurrentWeather(position.coords.longitude, position.coords.latitude);
+  });
 
   setTimeout(getAndShowWeather, 300000);
 }
 
 function getCurrentWeather (lon, lat) {
   var req = new XMLHttpRequest();
-    req.open('GET',"https://api.forecast.io/forecast/" + forecastIOKey + "/" + 50.087015 + "," + 14.502838, true);
+    req.open('GET',"https://api.forecast.io/forecast/" + forecastIOKey + "/" + lat + "," + lon, true);
     req.onload = function(e) {
       if (req.readyState == 4 && req.status == 200) {
         if(req.status == 200) {
@@ -58,7 +57,7 @@ function getCurrentWeather (lon, lat) {
     req.send(null);
 }
 
-function FtoC (f) {
+function FtoC (f) { 
   return (f - 32) * 5 / 9;
 }
 

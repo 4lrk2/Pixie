@@ -1,0 +1,135 @@
+{
+    "author": "Horse",
+    "dependencies": {},
+    "keywords": [],
+    "name": "pixie",
+    "pebble": {
+        "capabilities": [
+            "location"
+        ],
+        "displayName": "Pixie",
+        "enableMultiJS": false,
+        "messageKeys": {
+            "error": 3,
+            "icon": 2,
+            "location": 4,
+            "temperature_c": 1,
+            "temperature_f": 0
+        },
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/cloudy",
+                    "name": "CLOUDY_DAY",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/cloudy",
+                    "name": "CLOUDY_NIGHT",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "fonts/LECO1976-Regular.otf",
+                    "name": "LECO_48",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "images/fog.png",
+                    "name": "FOG",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/partly_cloudy.png",
+                    "name": "SLEET",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/partly_cloudy.png",
+                    "name": "PARTLY_CLOUDY_NIGHT",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/partly_cloudy.png",
+                    "name": "PARTLY_CLOUDY_DAY",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/partly_cloudy.png",
+                    "name": "WIND",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/partly_cloudy.png",
+                    "name": "CLOUDY",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/sunny.png",
+                    "name": "ERROR",
+                    "storageFormat": "png",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/sunny.png",
+                    "name": "NOT",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/sunny.png",
+                    "name": "CLEAR_DAY",
+                    "storageFormat": "png",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/sunny.png",
+                    "name": "CLEAR_NIGHT",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/light_snow.png",
+                    "name": "SNOW",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/light_rain.png",
+                    "name": "SLEET2",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/light_rain.png",
+                    "name": "RAIN",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "diorite",
+            "emery"
+        ],
+        "uuid": "badcf846-5296-4135-8125-adfdade70d69",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "3.1.0"
+}
